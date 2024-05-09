@@ -7,6 +7,13 @@ import "../styles/index.css";
 
 //import your own components
 import Home from "./component/home.jsx";
+import { SimpleCounter } from "./component/SimpleCounter.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+let counter = 0;
+setInterval(() => {
+  const paddedCounter = counter.toString().padStart(6, "0");
+  ReactDOM.render(<SimpleCounter counter={paddedCounter} />, document.querySelector("#app"));
+  counter++;
+}, 1000);
+
+

@@ -1,3 +1,20 @@
+.bigBox {
+text-align: center;
+}
+
+.bigBox div {
+    display: inline-block;
+    font-size: 70px;
+    line-height: 70px;
+    height: 75px;
+    background: black;
+    color: white;
+    padding: 15px;
+    box-sizing: content-box;
+}
+
+
+
 
 /* 
 
