@@ -15,5 +15,3 @@ setInterval(() => {
   ReactDOM.render(<SimpleCounter counter={paddedCounter} />, document.querySelector("#app"));
   counter++;
 }, 1000);
-
-
